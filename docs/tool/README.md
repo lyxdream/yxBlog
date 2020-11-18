@@ -445,6 +445,11 @@ git push -f git@github.com:lyxdream/lyxdream.github.io.git main
 解决办法：
 首次推送得时候使用如下命令
 
+```bash
+git remote add origin https://github.com/xxxx
+git branch -M main
+git push -u origin main
+```
 4、npm run deploy报错
 
 解决办法：需要在Git bash里面运行才行
