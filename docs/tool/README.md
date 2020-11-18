@@ -332,6 +332,41 @@ module.exports = {
 
 ## 部署到GitHub
 
+### 检查 SSH keys的设置
+   
+1、检查现有的 ssh key：
+
+```bash
+    $ cd ~/.ssh   //检查本机的ssh密钥
+```
+如果如下提示说明本地存在密钥：
+
+如果出现No such file or directory 说明需要生成密钥
+2、生成新的 SSH Key：
+
+```bash 
+ssh-keygen -t rsa -C "Gitee或GitHub上设置的邮箱地址"
+```
+3、然后把公钥和邮箱添加到ssh keys
+
+（1）打开本地 id_rsa.pub 文件，里面是生成的公钥
+
+（2）把你本地生成的密钥复制到里面，点击Add SSH key
+
+  如下图所示：
+
+
+
+ 4、测试
+
+ ```bash
+ $ ssh -T git@GitHub.com
+ ```
+ 出现如下图所示说明添加密钥成功
+
+
+### 创建仓库并发布
+
 新建仓库一： username.github.io （不用克隆到本地）
 
 > username是自己的github的账号名
@@ -343,14 +378,18 @@ module.exports = {
 
 仓库建好后，不用克隆到本地，内容更新修改都在下面的仓库中进行。
 
-新建仓库二：yxBlog克隆到本地，
+新建仓库二：yxBlog并克隆到本地，
 
 用来开发博客的，以后只需要改这个项目就可以了  
 
-> docs/.vuepress/config.js 中配置 对应仓库名 Wiki1001Pro
-  base: '/yxBlog/'// 这是部署到github相关的配置
+1、在 docs/.vuepress/config.js 文件中设置正确的 base
 
-1、在根目录下创建deploy.sh文件，文件内容如下：
+```js
+  base: '/lyxdream/'  
+ ``` 
+  > 这是部署到github相关的配置，因为我仓库一路径为https://github.com/lyxdream/lyxdream.github.io，所以需要配置 base: '/lyxdream/' ，
+
+2、在根目录下创建deploy.sh文件，文件内容如下：
 
 ```bash
 #!/usr/bin/env sh
@@ -373,14 +412,14 @@ git add -A
 git commit -m 'deploy'
 
 # 如果你想要部署到 https://USERNAME.github.io
-git push -f git@github.com:USERNAME/USERNAME.github.io.git master
+git push -f git@github.com:lyxdream/lyxdream.github.io.git main
 
 # 如果发布到 https://USERNAME.github.io/<REPO>  REPO=github上的项目
 # git push -f git@github.com:USERNAME/<REPO>.git master:gh-pages
 
 ```
 
-2、在package.json文件里添加如下命令：
+3、在package.json文件里添加如下命令：
 
 ```json
 "scripts": {
@@ -391,10 +430,26 @@ git push -f git@github.com:USERNAME/USERNAME.github.io.git master
   }
   ```
 
-
-  3、执行deploy.sh里的脚本，然后运行如下命令则部署成功
+  4、执行deploy.sh里的脚本，然后运行如下命令则部署成功
 
   ```bash
     npm run deploy
-
   ```
+输入https://lyxdream.github.io就可以访问
+
+遇到得问题
+
+1、出现404页面，原因是我没配置在 docs/.vuepress/config.js 文件中设置正确的 base
+2、发布不成功，提示如下错误；
+
+解决办法：
+首次推送得时候使用如下命令
+
+4、npm run deploy报错
+
+解决办法：需要在Git bash里面运行才行
+
+如图所示：
+
+
+
