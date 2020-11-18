@@ -447,6 +447,7 @@ git push -f git@github.com:lyxdream/lyxdream.github.io.git main
 
 ```bash
 git remote add origin https://github.com/xxxx
+# git remote add origin https://github.com/lyxdream/lyxdream.github.io.git
 git branch -M main
 git push -u origin main
 ```
