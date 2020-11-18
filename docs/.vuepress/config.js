@@ -2,7 +2,7 @@ module.exports = {
     title: 'Sunglow的博客',
     description:
         '分享Web前端相关的技术文章、工具资源、精选课程、最新资讯、原创内容',
-    base: '/yxBlog/', // 这是部署到github相关的配置
+    base: '/lyxdream/', // 这是部署到github相关的配置
     markdown: {
         lineNumbers: false, // 代码块显示行号
     },
