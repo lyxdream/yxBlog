@@ -1,10 +1,11 @@
 module.exports = {
-    title: 'Sunglow的博客',
+    title: '前端成长指引',
     description:
-        '分享Web前端相关的技术文章、工具资源、精选课程、最新资讯、原创内容',
-    base:'', // 这是部署到github相关的配置
+        // '从前端基础到前端框架使用及其源码解读,再到Node.js,和我一起规划你的前端成长之路',
+     '从前端基础到前端框架使用及其源码解读,再到Node.js，我们一起升级打怪，一起开启进阶之路',
+    base: '', // 这是部署到github相关的配置
     markdown: {
-        lineNumbers: false, // 代码块显示行号
+        lineNumbers: true, // 代码块显示行号
     },
     head: [
         ['link', { rel: 'icon', href: '/img/favicon.ico' }], // 标签栏里的头像
@@ -19,7 +20,6 @@ module.exports = {
         // sidebarDepth: 2, // 侧边栏显示2级
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Node', link: '/node/' },
             {
                 text: '前端',
                 items: [
@@ -28,14 +28,15 @@ module.exports = {
                     { text: 'js', link: '/web/ts/' },
                 ],
             },
-            { text: '常见面试问题', link: '/interview/' },
+            { text: 'Node', link: '/node/' },
             { text: '工具', link: '/tool/' },
+            { text: '面试问题', link: '/interview/' },
             {
                 text: 'Languages',
                 ariaLabel: 'Language Menu',
                 items: [
                     { text: 'Chinese', link: '/language/chinese/' },
-                    { text: 'Japanese', link: '/language/japanese/' },
+                    { text: 'English', link: '/language/English/' },
                 ],
             },
         ],
