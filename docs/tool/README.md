@@ -450,12 +450,31 @@ git remote add origin https://github.com/xxxx
 # git remote add origin https://github.com/lyxdream/lyxdream.github.io.git
 git branch -M main
 git push -u origin main
+
+
+git push -u origin master
 ```
 4、npm run deploy报错
 
 解决办法：需要在Git bash里面运行才行
 
 如图所示：
+
+
+
+
+1、一个项目里面怎么连接两个git地址,可以设置两个远程的git地址
+git remote add origin git地址1
+git remote add origin2 git地址2
+2、先拉取git B 该地址上的数据
+git pull origin2 master --allow-unrelated-histories   （--allow-unrelated-histories是为了解决
+
+
+git remote -v  // 查看此时的包括两个远程地址
+git remote rm origin  // 删除git B的远程地址
+git remote -v  //此时应该只有git A的远程地址
+
+
 
 
 
