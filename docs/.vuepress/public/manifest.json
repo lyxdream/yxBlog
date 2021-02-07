@@ -1,0 +1,7 @@
+{
+    "name": "koala_blog",
+    "short_name": "blog",
+    "version": "1.0.0",
+    "description": "从前端基础到前端框架使用及其源码解读,再到Node.js，我们一起升级打怪，一起开启进阶之路",
+    "manifest_version": 2
+}
