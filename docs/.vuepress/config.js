@@ -129,16 +129,20 @@ module.exports = {
                 ],
                 ['/mini/camera', '人脸采集 - 拍照上传校验'],
                 ['/mini/h5ToMini', '小程序和H5互跳以及小程序跳转小程序'],
+                ['/mini/openLocation', '使用wx.openLocation遇到的坑'],
             ],
 
             '/webpack/': [['', '目录']],
             '/node/': [
                 ['', 'node目录'] /* /node/ */,
-                ['express', 'node框架'] /* /node/express.html */,
+                ['what', 'Node基本概念'] /* /node/express.html */,
             ],
             '/designPattern/': [['', '目录']],
             '/algorithm/': [['', '目录']],
-            '/interview/': [['', '常见问题']],
+            '/interview/': [
+                ['', '目录'],
+                ['eventRing', '浏览器事件环'],
+            ],
             '/about/': [['', '关于我']],
         },
     },

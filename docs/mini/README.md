@@ -7,3 +7,5 @@
 - [人脸采集-拍照上传校验](camera)
 
 - [小程序和H5互跳以及小程序跳转小程序](h5ToMini)
+
+- [使用wx.openLocation遇到的坑](openLocation)
