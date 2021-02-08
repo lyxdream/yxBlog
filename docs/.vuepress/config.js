@@ -44,10 +44,10 @@ module.exports = {
             { text: '小程序', link: '/mini/' },
             { text: 'Webpack', link: '/webpack/' },
             { text: 'Nodejs', link: '/node/' },
-            { text: '设计模式', link: '/algorithm/' },
+            { text: '设计模式', link: '/designPattern/' },
             { text: '算法', link: '/algorithm/' },
             { text: '面试问题', link: '/interview/' },
-            { text: '关于我', link: '/introduce/' },
+            { text: '关于我', link: '/about/' },
             {
                 text: 'GitHub',
                 link: 'https://github.com/lyxdream/lyxdream.github.io',
@@ -89,13 +89,31 @@ module.exports = {
                 },
             ],
             '/typescript/': [['', '目录']],
-            '/frame/vue/': [['', '目录']],
-            '/frame/react/': [['', '目录']],
+            '/frame/': [
+                ['', '目录'], //没有子级的时候可以这样写
+                {
+                    title: 'vue',
+                    name: 'vue',
+                    collabsable: true,
+                    children: [['vue/', '目录']],
+                },
+                {
+                    title: 'react',
+                    name: 'react',
+                    collabsable: true,
+                    children: [['react/', '目录']],
+                },
+            ],
+            '/mini/': [['', '目录']],
+            '/webpack/': [['', '目录']],
             '/node/': [
                 ['', 'node目录'] /* /node/ */,
                 ['express', 'node框架'] /* /node/express.html */,
             ],
+            '/designPattern/': [['', '目录']],
+            '/algorithm/': [['', '目录']],
             '/interview/': [['', '常见问题']],
+            '/about/': [['', '关于我']],
         },
     },
 }
