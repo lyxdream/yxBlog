@@ -57,6 +57,13 @@ module.exports = {
             '/tool/': [
                 ['', '目录'],
                 ['describeBlog', 'VuePress搭建个人博客'],
+                [
+                    'crawler',
+                    ' axios + cheerio + node-xlsx 爬取并导出到excel表格',
+                ],
+                ['gitCommit', 'git commit规范'],
+                ['nvm', 'nvm的安装和使用'],
+                ['vscode', 'vscode 代码格式化'],
             ],
             '/web/': [
                 ['', '目录'], //没有子级的时候可以这样写
@@ -79,13 +86,22 @@ module.exports = {
                     title: 'javascript',
                     name: 'javascript',
                     collabsable: true,
-                    children: [['javascript/', '目录']],
+                    children: [
+                        ['javascript/', '目录'],
+                        ['javascript/higherFunction', '高阶函数'],
+                        ['javascript/currying', '函数柯里化 和函数反柯里化'],
+                        ['javascript/typeDetection', '类型检测'],
+                    ],
                 },
                 {
                     title: 'es6',
                     name: 'es6',
                     collabsable: true,
-                    children: [['es6/', '目录']],
+                    children: [
+                        ['es6/', '目录'],
+                        ['es6/promise', 'promise手写系列'],
+                        ['es6/asynchronous', 'generator => async + await'],
+                    ],
                 },
             ],
             '/typescript/': [['', '目录']],
@@ -104,7 +120,17 @@ module.exports = {
                     children: [['react/', '目录']],
                 },
             ],
-            '/mini/': [['', '目录']],
+            '/mini/': [
+                ['', '目录'],
+                ['/mini/getLocation', '小程序(授权)获取当前位置'],
+                [
+                    '/mini/input',
+                    'input内容过长，失去焦点的时候，内容显示不全的',
+                ],
+                ['/mini/camera', '人脸采集 - 拍照上传校验'],
+                ['/mini/h5ToMini', '小程序和H5互跳以及小程序跳转小程序'],
+            ],
+
             '/webpack/': [['', '目录']],
             '/node/': [
                 ['', 'node目录'] /* /node/ */,
