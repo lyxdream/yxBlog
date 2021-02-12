@@ -16,6 +16,7 @@ module.exports = {
         {
             serviceWorker: true,
             updatePopup: true,
+            '@vuepress/back-to-top': true,
         },
     ],
     themeConfig: {
@@ -25,10 +26,10 @@ module.exports = {
         displayAllHeaders: false, // 默认值：false  true显示所有页面的标题链接
         activeHeaderLinks: true, // 活动的标题链接是否禁用 默认值：true
         // sidebar: 'auto',//自动生成当前页面标题的侧边栏
-        // sidebarDepth: 2, // 侧边栏显示2级
+        sidebarDepth: 3, // 侧边栏显示2级
         nav: [
             { text: '主页', link: '/' },
-            { text: '工具', link: '/tool/' },
+            { text: '工具', link: '/tool/',sidebarDepth: 2 },
             {
                 text: 'HTML+CSS+JS',
                 link: '/web/',

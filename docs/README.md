@@ -4,7 +4,7 @@ heroImage: ./img/home.jpg
 heroText: 前端成长指引
 tagline: 一起升级打怪，一起开启进阶之路
 actionText: 开始阅读 →
-actionLink: /zh/guide/
+actionLink: /tool/
 features:
     - title: 前端成长指引
       details: 从前端基础到小程序,框架使用及其源码解读,再到Node.js,我们一起升级打怪，一起开启进阶之路

@@ -164,8 +164,17 @@ commitizen init cz-conventional-changelog --save-dev --save-exact
 ```
 
 执行 `npm git-cz` 或者执行`npm run commit`
+效果如下
+配置changelog.config.js之前的效果：
+![图片1](./images/1.png)
 
+![图片2](./images/2.png)
 
+![图片3](./images/3.png)
+
+配置changelog.config.js之后的效果：
+
+![图片4](./images/4.png)
 
 ### commit message lint 校验
 
@@ -247,9 +256,11 @@ workflow: 工作流相关文件修改
 
 配置完成后，每次 commit 就会进行校验，校验不通过会拦截 commit
 
+运行结果如下:
 
+![图片5](./images/5.png)
 
-> 会发现出现了 husky 校验
+> 会发现出现了husky校验
 
 ### 生成 CHANGELOG.md
 
@@ -350,14 +361,25 @@ npm install -g conventional-changelog-cli
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## customizable-example
 采用了cz-customizable定制化提交说明的适配器、commitlint-config-cz @commitlint/cli+husky校验规则以及conventional-changelog日志生成器
-
-> 如果想了解commit message 格式可以去看[cz-demo](https://github.com/lyxdream/cz-demo)，这里不做详细介绍
 
 ### 自定义 Adapter
 
 >  有时候angular团队的那套规范会不合适自己团队的要求，这时候就需要定制一套自己的commit规范，cz-customizable是commitizen 的一个 adapter，格式类似上面的 cz-conventional-changelog ，但提供一定程度的自定义。
+
 1、安装
 
     ```bash
@@ -397,8 +419,9 @@ or
 
   > 图标可以从找个网站找：[emoji图标](https://emojipedia.org/objects/)
 
+运行效果如下：
 
-
+ ![图片1](./images/11.png)
 
  ### Commitlint: 校验你的 message
 
@@ -407,7 +430,7 @@ or
    ```
 > commitlint-config-cz 合并 cz-customizable 的配置 {types,scopes,scopeOverrides} 和 commitlint 的配置 {type-enum,scope-enum}。这样，你就可以在一个地方维护 types 和 scopes。
 
-### 在项目中新建 commitlint.config.js 文件并设置校验规则：
+#### 在项目中新建 commitlint.config.js 文件并设置校验规则：
 ```js
 module.exports = {
   extends: ['cz'],
@@ -437,6 +460,16 @@ npm i husky -D
 }
 
 ```
+
+执行npm run commit,效果如下：
+
+未配置husky前：
+
+![图片2](./images/12.png)
+
+配置husky之后：
+
+![图片3](./images/13.png)
 
 
 ### 生成 CHANGELOG.md
@@ -501,5 +534,14 @@ vue add @ziyi2/ui-cz
 [优雅的提交你的 Git Commit Message](https://juejin.im/post/6844903606815064077#heading-10)
 
 [Cz工具集使用介绍 - 规范Git提交说明](https://blog.csdn.net/weixin_33890526/article/details/91393527)
+
+
+
+
+
+
+
+
+
 
 
