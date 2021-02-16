@@ -9,3 +9,5 @@
 - [nvm的安装和使用](nvm)
 
 - [vscode 代码格式化](vscode)
+
+- [第三方登录](thirdPartyLogin)

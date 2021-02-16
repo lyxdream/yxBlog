@@ -430,6 +430,10 @@ git push -f git@github.com:lyxdream/lyxdream.github.io.git main
   }
   ```
 
+
+
+
+
   4、执行deploy.sh里的脚本，然后运行如下命令则部署成功
 
   ```bash

@@ -65,6 +65,7 @@ module.exports = {
                 ['gitCommit', 'git commit规范'],
                 ['nvm', 'nvm的安装和使用'],
                 ['vscode', 'vscode 代码格式化'],
+                ['thirdPartyLogin', '第三方登录']
             ],
             '/web/': [
                 ['', '目录'], //没有子级的时候可以这样写
@@ -92,6 +93,7 @@ module.exports = {
                         ['javascript/higherFunction', '高阶函数'],
                         ['javascript/currying', '函数柯里化 和函数反柯里化'],
                         ['javascript/typeDetection', '类型检测'],
+                        ['javascript/dataConversion', '数据类型转换']
                     ],
                 },
                 {
@@ -142,7 +144,9 @@ module.exports = {
             '/algorithm/': [['', '目录']],
             '/interview/': [
                 ['', '目录'],
+                ['dataTypeConversion','数据类型转换'],
                 ['eventRing', '浏览器事件环'],
+                ['commonQuestions','常见面试题'] 
             ],
             '/about/': [['', '关于我']],
         },

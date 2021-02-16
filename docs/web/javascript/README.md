@@ -5,6 +5,8 @@
 - [函数柯里化 和函数反柯里化](currying)
 - 类型检测 
   [typeof  constructor  instanceof   Object.prototype.toString.call()](typeDetection)  
+- [数据类型转换](dataConversion)
+  
  
 
 
