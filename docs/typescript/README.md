@@ -4,6 +4,9 @@
 
 [预览地址](http://martsforever-pot.gitee.io/vue-visual-editor/)
 
+
+github地址 [可视化编辑器](https://github.com/lyxdream/visual-editor)
+
 实现效果如下：
 
 ![预览2](./images/2.png)

@@ -11,3 +11,6 @@
 - [vscode 代码格式化](vscode)
 
 - [第三方登录](thirdPartyLogin)
+
+- [埋点](buryingPoint)
+

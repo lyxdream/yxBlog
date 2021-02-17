@@ -65,6 +65,7 @@ module.exports = {
                 ['gitCommit', 'git commit规范'],
                 ['nvm', 'nvm的安装和使用'],
                 ['vscode', 'vscode 代码格式化'],
+                ['buryingPoint', '埋点'],
                 ['thirdPartyLogin', '第三方登录']
             ],
             '/web/': [
@@ -74,15 +75,19 @@ module.exports = {
                     name: 'html',
                     collabsable: true,
                     children: [
-                        ['html/', '目录'],
-                        ['html/test', 'test'],
+                        ['html/', '目录']
                     ],
                 },
                 {
                     title: 'css',
                     name: 'css',
                     collabsable: true,
-                    children: [['css/', '目录']],
+                    children: [
+                        ['css/', '目录'],
+                        ['css/margin', 'margin折叠'],
+                        ['css/compatible', 'css兼容问题'],
+                        ['css/clear', '清除浮动']     
+                ],
                 },
                 {
                     title: 'javascript',
@@ -93,7 +98,10 @@ module.exports = {
                         ['javascript/higherFunction', '高阶函数'],
                         ['javascript/currying', '函数柯里化 和函数反柯里化'],
                         ['javascript/typeDetection', '类型检测'],
-                        ['javascript/dataConversion', '数据类型转换']
+                        ['javascript/dataConversion', '数据类型转换'],
+                        ['javascript/event', 'js中事件冒泡和事件捕获'],
+                        ['javascript/arguments', 'arguments'],
+                        
                     ],
                 },
                 {
@@ -114,7 +122,10 @@ module.exports = {
                     title: 'vue',
                     name: 'vue',
                     collabsable: true,
-                    children: [['vue/', '目录']],
+                    children: [
+                        ['vue/', '目录'],
+                        ['vue/source','Vue2源码解析']
+                ],
                 },
                 {
                     title: 'react',
@@ -141,7 +152,11 @@ module.exports = {
                 ['what', 'Node基本概念'] /* /node/express.html */,
             ],
             '/designPattern/': [['', '目录']],
-            '/algorithm/': [['', '目录']],
+            '/algorithm/': [
+                ['', '目录'],
+                ['/algorithm/tree','树'],
+                ['/algorithm/LinkedList','链表']
+          ],
             '/interview/': [
                 ['', '目录'],
                 ['dataTypeConversion','数据类型转换'],
